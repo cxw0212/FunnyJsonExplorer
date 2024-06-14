@@ -1,0 +1,95 @@
+{
+  "company": {
+    "name": "Tech Innovators Inc.",
+    "location": {
+      "address": {
+        "street": "123 Innovation Way",
+        "city": "Techville",
+        "state": "CA",
+        "postalCode": "94025"
+      },
+      "coordinates": {
+        "latitude": 37.4848,
+        "longitude": -122.1484
+      }
+    },
+    "departments": [
+      {
+        "name": "Research and Development",
+        "employees": [
+          {
+            "id": 1,
+            "name": "Alice Smith",
+            "title": "Senior Developer",
+            "skills": ["JavaScript", "Python", "Machine Learning"],
+            "contact": {
+              "email": "alice.smith@techinnovators.com",
+              "phone": "555-1234"
+            }
+          },
+          {
+            "id": 2,
+            "name": "Bob Johnson",
+            "title": "Data Scientist",
+            "skills": ["Python", "R", "Data Analysis"],
+            "contact": {
+              "email": "bob.johnson@techinnovators.com",
+              "phone": "555-5678"
+            }
+          }
+        ]
+      },
+      {
+        "name": "Marketing",
+        "employees": [
+          {
+            "id": 3,
+            "name": "Charlie Brown",
+            "title": "Marketing Specialist",
+            "skills": ["SEO", "Content Creation", "Social Media"],
+            "contact": {
+              "email": "charlie.brown@techinnovators.com",
+              "phone": "555-8765"
+            }
+          }
+        ]
+      }
+    ],
+    "products": [
+      {
+        "id": "p100",
+        "name": "Innovative Gadget",
+        "category": "Electronics",
+        "price": 99.99,
+        "features": ["Portable", "Battery Powered", "Wi-Fi Enabled"],
+        "availability": {
+          "online": true,
+          "inStore": false
+        }
+      },
+      {
+        "id": "p200",
+        "name": "Smart Home Hub",
+        "category": "Home Automation",
+        "price": 149.99,
+        "features": ["Voice Control", "App Integration", "Energy Efficient"],
+        "availability": {
+          "online": true,
+          "inStore": true
+        }
+      }
+    ],
+    "financials": {
+      "2022": {
+        "revenue": 5000000,
+        "expenses": 4000000,
+        "profit": 1000000
+      },
+      "2023": {
+        "revenue": 6000000,
+        "expenses": 4500000,
+        "profit": 1500000
+      }
+    }
+  }
+}
