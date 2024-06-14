@@ -79,7 +79,7 @@ poker-face-icon-family: 中间节点icon：♢ 叶节点icon：♤
 
 **领域模型**
 
-![domain-model](README.assets\Funny JSON Explorer 领域模型.png)
+![domain-model](README.assets/Funny JSON Explorer 领域模型.png)
 
 
 
@@ -98,7 +98,7 @@ poker-face-icon-family: 中间节点icon：♢ 叶节点icon：♤
 
 ### 2.1 UML类图
 
-![](README.assets\image-20240614001221981.png)
+![](README.assets/image-20240614001221981.png)
 
 ### 2.2使用的设计及模式和作用
 
@@ -139,9 +139,9 @@ poker-face-icon-family: 中间节点icon：♢ 叶节点icon：♤
 
 ### 3.1 IDE中运行
 
-![image-20240615012029679](README.assets\image-20240615012029679.png)
+![image-20240615012029679](README.assets/image-20240615012029679.png)
 
-![image-20240615012059611](README.assets\image-20240615012059611.png)
+![image-20240615012059611](README.assets/image-20240615012059611.png)
 
 ### 3.2 终端中运行:
 
@@ -161,9 +161,9 @@ java -cp "bin;lib/gson-2.8.2.jar" main.FunnyJsonExplorer
 
 结果截图如下：
 
-![image-20240615012438551](README.assets\image-20240615012438551.png)
+![image-20240615012438551](README.assets/image-20240615012438551.png)
 
 注：pokerface风格在终端中出现对不齐的问题
 
-![image-20240615012607051](README.assets\image-20240615012607051.png)
+![image-20240615012607051](README.assets/image-20240615012607051.png)
 
