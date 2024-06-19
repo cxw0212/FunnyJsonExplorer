@@ -1,8 +1,10 @@
 package composition;
 
+import iterator.Iterator;
+import icon.IconFactory;
+
 import java.util.ArrayList;
 import java.util.List;
-import icon.IconFactory;
 
 public class Container extends Leaf {
     private List<Leaf> leaves;
@@ -37,4 +39,24 @@ public class Container extends Leaf {
         }
     }
 
+    public Iterator<Leaf> createIterator() {
+        return new ContainerIterator();
+    }
+
+    private class ContainerIterator implements Iterator<Leaf> {
+        private int index = 0;
+
+        @Override
+        public boolean hasNext() {
+            return index < leaves.size();
+        }
+
+        @Override
+        public Leaf next() {
+            if (hasNext()) {
+                return leaves.get(index++);
+            }
+            return null;
+        }
+    }
 }

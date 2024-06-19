@@ -1,11 +1,13 @@
 package main;
 
 import composition.Container;
+import composition.Leaf;
 import factory.Factory;
 import factory.TreeStyleFactory;
 import factory.RectangleStyleFactory;
 import icon.*;
 import parser.JsonFileParser;
+import iterator.Iterator;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -24,10 +26,19 @@ public class FunnyJsonExplorer {
         JsonFileParser parser = new JsonFileParser();
         Container root = parser.parse(jsonFile, styleFactory, iconFactory);
         draw(root);
+        iterate(root);
     }
 
     public void draw(Container root) {
         styleFactory.drawContainer(root, 0, true, new ArrayList<Boolean>());
+    }
+
+    public void iterate(Container root) {
+        Iterator<Leaf> iterator = root.createIterator();
+        while (iterator.hasNext()) {
+            Leaf leaf = iterator.next();
+            //System.out.println("Iterating: " + leaf.getName());
+        }
     }
 
     public static void main(String[] args) {
